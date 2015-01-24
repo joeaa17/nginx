@@ -5,8 +5,8 @@ echo "ls >"
 ls 
 echo "ls bin >"
 ls bin
-echo "ls $1 >"
-ls $1
+echo "cat"
+cat Procfile
 mkdir -p "$1/bin/"
 cp "bin/nginx-$STACK" "$1/bin/nginx"
 nginx_version=$(./bin/nginx-$STACK -V 2>&1 | head -1 | awk '{ print $NF }')
