@@ -1,1 +1,1 @@
-web: scripts/build_nginx.sh && nginx
+web: scripts/build_nginx.sh
