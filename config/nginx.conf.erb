@@ -45,7 +45,7 @@ http {
                         proxy_set_header Host $host;
                         proxy_set_header X-Real-IP $remote_addr;
                         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-                        proxy_pass http://erikmail.myddns.com:205/Streaming/channels/1/picture/
+                        proxy_pass http://erikmail.myddns.com:205/Streaming/channels/1/picture/;
                         proxy_set_header Authorization "Basic dXNlcjpwYXNzd29yZA==";
                 }
 	}
