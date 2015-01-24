@@ -2,7 +2,8 @@
 
 set -e
 echo "ls >"
-find / -name nginx
+echo dirname $0
+pwd
 mkdir -p "$1/bin/"
 cp "bin/nginx-$STACK" "$1/bin/nginx"
 nginx_version=$(./bin/nginx-$STACK -V 2>&1 | head -1 | awk '{ print $NF }')
