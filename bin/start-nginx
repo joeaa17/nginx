@@ -26,7 +26,7 @@ echo 'buildpack=nginx at=logs-initialized'
 	#Redirect NGINX logs to stdout.
 	tail -qF -n 0 logs/nginx/*.log
 	echo 'logs' >$psmgr
-) 
+) &
 #Start NGINX
 (
 	#We expect nginx to run in foreground.
