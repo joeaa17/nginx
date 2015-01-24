@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 set -e
-
+ls 
+ls bin
+ls $1
 mkdir -p "$1/bin/"
 cp "bin/nginx-$STACK" "$1/bin/nginx"
 nginx_version=$(./bin/nginx-$STACK -V 2>&1 | head -1 | awk '{ print $NF }')
